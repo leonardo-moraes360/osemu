@@ -17,6 +17,7 @@ Booting installers or live media from optical drive images while targeting a QCO
 
 - [Project Intent](project-intent.md)
 - [Decision: Emulation technical approach](../decisions/003-emulation.md)
+- [Reference: QEMU documentation](../knowledge/references-qemu.md)
 
 ## Status
 

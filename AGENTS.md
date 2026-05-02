@@ -25,6 +25,7 @@ Before starting work, load:
 - `@context/intent/feature-*.md` when changing a specific feature area
 - `@context/decisions/*.md` relevant to the change
 - `@context/knowledge/patterns/*.md` that apply to shell work
+- [`@context/knowledge/references-qemu.md`](context/knowledge/references-qemu.md) when QEMU flags, formats, or system emulation behavior need upstream confirmation
 - `@context/.context-mesh-framework.md` when unsure about Context Mesh rules
 
 ## Project Structure
@@ -42,6 +43,7 @@ root/
 │   ├── decisions/
 │   ├── knowledge/
 │   │   ├── patterns/
+│   │   ├── references-qemu.md
 │   │   └── anti-patterns/
 │   ├── agents/
 │   └── evolution/

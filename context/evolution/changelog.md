@@ -4,6 +4,7 @@
 
 ### Added
 
+- Knowledge reference [references-qemu](../knowledge/references-qemu.md) linking official [QEMU documentation (master)](https://www.qemu.org/docs/master/) for consultation on flags, formats, and emulation semantics
 - Project initialized with Context Mesh
 - Created project intent
 - Created feature intents: image transform, emulation

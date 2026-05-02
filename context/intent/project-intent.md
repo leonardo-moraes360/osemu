@@ -24,6 +24,10 @@
 - [Feature: Image transform](feature-image-transform.md) — `qcow2.sh`
 - [Feature: Emulation](feature-emulation.md) — `emu.sh`
 
+## External references
+
+- [QEMU documentation (mesh index)](../knowledge/references-qemu.md) — curated links into the upstream manual ([QEMU docs master](https://www.qemu.org/docs/master/)).
+
 ## Status
 
 - **Created**: 2026-05-02 (Phase: Intent)

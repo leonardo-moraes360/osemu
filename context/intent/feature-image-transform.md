@@ -18,6 +18,7 @@ QCOW2 is the natural format for QEMU-centric workflows; converting from raw alig
 
 - [Project Intent](project-intent.md)
 - [Decision: Image transform technical approach](../decisions/002-image-transform.md)
+- [Reference: QEMU documentation](../knowledge/references-qemu.md)
 
 ## Status
 
