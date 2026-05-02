@@ -21,6 +21,7 @@
 
 ## Scope
 
+- **Version**: The project version is recorded as a single SemVer line in `VERSION` at the repository root (see [README](../../README.md#versioning) and [Decision: Tech stack](../decisions/001-tech-stack.md)).
 - [Feature: Image transform](feature-image-transform.md) — `qcow2.sh`
 - [Feature: Emulation](feature-emulation.md) — `emu.sh`
 

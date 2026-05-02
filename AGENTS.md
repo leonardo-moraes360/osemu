@@ -33,6 +33,7 @@ Before starting work, load:
 
 ```text
 root/
+├── VERSION
 ├── AGENTS.md
 ├── README.md
 ├── LICENSE

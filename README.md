@@ -83,6 +83,8 @@ This tooling is intended for **local development and experimentation**. There is
 
 ## Versioning
 
+The canonical project version string is the single SemVer line in [`VERSION`](VERSION) at the repository root. Git release tags should match that value with a `v` prefix (for example file `0.1.0` → tag `v0.1.0`).
+
 Tag releases semantically (`vMAJOR.MINOR.PATCH`) when the scripts stabilize; until then revisions are tracked via Git history and [`context/evolution/changelog.md`](context/evolution/changelog.md).
 
 ## Authors
