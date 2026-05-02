@@ -87,11 +87,11 @@ Tag releases semantically (`vMAJOR.MINOR.PATCH`) when the scripts stabilize; unt
 
 ## Authors
 
-- Maintainer: add your name or team here.
+- Leonardo Moraes
 
 ## License
 
-Specify your license here (e.g. MIT, GPL-3.0). Add a `LICENSE` file when you choose one.
+This project is licensed under the **MIT License** — see [`LICENSE`](LICENSE).
 
 ## Acknowledgments
 

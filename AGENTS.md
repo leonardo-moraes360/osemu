@@ -1,5 +1,7 @@
 # AGENTS.md
 
+**Author:** Leonardo Moraes · **License:** [MIT](LICENSE)
+
 ## Setup Commands
 
 There is no language package manager for this repo. Prerequisites are system packages.
@@ -31,6 +33,7 @@ Before starting work, load:
 root/
 ├── AGENTS.md
 ├── README.md
+├── LICENSE
 ├── qcow2.sh
 ├── emu.sh
 ├── context/
