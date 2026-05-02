@@ -34,6 +34,10 @@ function main() {
         -cdrom "$cdrom" \
         -boot menu=on \
         -drive file="$image" \
+        -cpu host \
+        -smp 8 \
+        -vga virtio \
+        -display sdl,gl=on \
         -m 8G
 }
 
