@@ -21,6 +21,7 @@ Optional: KVM access on Linux (`/dev/kvm`); QEMU will behave differently without
 
 Before starting work, load:
 
+- `@context/agents/playbook-selector.md` when the request **may change** scripts, repo code, or anything under `@context/` (classify → follow exactly one linked `playbook-*.md` there; purely explanatory asks with **no** repo edits omit this rule)
 - `@context/intent/project-intent.md` (always)
 - `@context/intent/feature-*.md` when changing a specific feature area
 - `@context/decisions/*.md` relevant to the change
@@ -54,6 +55,7 @@ root/
 
 ### Always
 
+- When work may alter code/scripts or `@context/`, load [`@context/agents/playbook-selector.md`](context/agents/playbook-selector.md), pick exactly one playbook, and follow it (ask one short clarification if classification is ambiguous).
 - Load context before implementing.
 - Follow decisions in `@context/decisions/`.
 - Use patterns from `@context/knowledge/patterns/`.
