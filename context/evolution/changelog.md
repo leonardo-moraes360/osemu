@@ -16,7 +16,14 @@
 
 ### Changed
 
+- **`emu.sh`**: selects `qemu-system-x86_64` or `qemu-system-aarch64` with host-default guest ISA, optional `--arch` / `OSEMU_ARCH`, aarch64 `-machine virt`, and KVM limited to Linux same-ISA hosts with TCG fallbacks documented in [`context/decisions/003-emulation.md`](../decisions/003-emulation.md). README and AGENTS prerequisites updated accordingly.
+- **`emu.sh`**: **`--disk-only`** single-disk boot, **`--machine`** for aarch64 (incl. `raspi*` + `if=sd`), filename guard when paths look like raspios/arm64 vs x86 guest, README Raspberry Pi OS section.
+- **`emu.sh`**: **`raspi*`** launches validate SD virtual size is a **power-of-two** bytes (`qemu-img`); suggest **`qemu-img resize`** next power-of-two or **`OSEMU_RASPI_ROUND_SD=1`** auto-grow. README Raspberry Pi subsection documents this QEMU constraint.
+- **`qcow2.sh`**: optional **`--raspi-round` / `--raspi-sd`**, **`--help`**, env **`OSEMU_QCOW2_RASPI_ROUND=1`**, and post-convert **`qemu-img resize`** to next power-of-two when needed for QEMU **`raspi*`** SD (see [Decision: Image transform](../decisions/002-image-transform.md)).
+
 ### Fixed
+
+- **`emu.sh`**: aarch64 **`virt`** display stack avoids `-vga virtio` + `sdl,gl=on` (Ubuntu “Virtio VGA not available”) by default via **`virtio-gpu-pci`** + **`OSEMU_*`** overrides; rejects obvious **`-cdrom` misuse** (`*.img` / raspios-style first argument) with a corrective example.
 
 ---
 

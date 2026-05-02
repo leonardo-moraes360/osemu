@@ -6,11 +6,16 @@
 
 There is no language package manager for this repo. Prerequisites are system packages.
 
-- Check QEMU tools: `qemu-img --version`, `qemu-system-x86_64 --version`
+- Check QEMU tools: `qemu-img --version`, `qemu-system-x86_64 --version`, and install `qemu-system-aarch64` when working with AArch64 guests
 - Ensure scripts are executable: `chmod +x qcow2.sh emu.sh`
-- Run converters/emulator: `./qcow2.sh <path-to-raw> <output_dir>`, `./emu.sh <cdrom> <path-to-qcow2>`
+- Run converters/emulator: `./qcow2.sh [--raspi-round] <path-to-raw> <output_dir>`, `./emu.sh [--arch …] [--machine …] (...)` (Pi/raspios `.img`: convert with `./qcow2.sh --raspi-round` then **`emu.sh --arch aarch64 --machine raspi3b --disk-only …`** — see [README](README.md#raspberry-pi-os--img-disk-images))
 
-Optional: KVM access on Linux (`/dev/kvm`); QEMU will behave differently without virtualization.
+Optional: KVM on Linux (`/dev/kvm`); `emu.sh` enables KVM only when guest ISA matches host ISA. Otherwise QEMU uses TCG CPU models documented in [`context/decisions/003-emulation.md`](context/decisions/003-emulation.md).
+
+### Emulation context
+
+- Behaviour and acceptance: [`context/intent/feature-emulation.md`](context/intent/feature-emulation.md)
+- KVM vs TCG / machine types: [`context/decisions/003-emulation.md`](context/decisions/003-emulation.md)
 
 ## Code Style
 
